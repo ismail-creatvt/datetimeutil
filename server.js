@@ -30,6 +30,10 @@ app.get('/time',function(req,res){
     res.write(dateformat(new Date(),'hh:MM:ss TT'))
     res.end()
 })
-app.listen(process.env.PORT || 4000, function(){
-    console.log('Your node js server is running');
+app.listen(process.env.PORT || 4000, function(port){
+    if(process.env.PORT == undefined){
+        console.log("Your node js server is running on Port no : 4000");
+    }else{
+        console.log(`Your node js server is running on Port no : ${process.env.PORT}`);
+    }
 });

@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Date Time Util</title>
 </head>
 <body>
-    <ul>
-        <li>Use /datetime to get full date time</li>
-        <li>Use /date to get full date</li>
-        <li>Use /time to get full time</li>
-    </ul>
+    <div class="header">
+        <h1>Date time Utility</h1>
+        <p>
+            Fetch the current date and time
+        </p>
+    </div>
+    <div class="body">
+        <div>
+            <h3>To fetch Current Date and time</h3>
+            <p>
+                Use <a href="http://datetimeutil.herokuapp.com/datetime">http://datetimeutil.herokuapp.com/datetime</a>
+            </p>
+        </div>
+        <div>
+            <h3>To fetch just Current time</h3>
+            <p>
+                Use <a href="http://datetimeutil.herokuapp.com/time">http://datetimeutil.herokuapp.com/time</a>
+            </p>
+        </div>
+        <div>
+            <h3>To fetch just Current Date</h3>
+            <p>
+                Use <a href="http://datetimeutil.herokuapp.com/date">http://datetimeutil.herokuapp.com/date</a>
+            </p>
+        </div>
+        <div>
+            <h3>To fetch formatted Date time</h3>
+            <p>
+                Use http://datetimeutil.herokuapp.com/formatted?format=&ltformat&gt</a>
+            </p>
+            <p>
+                example:
+                <br/>
+                <a href="http://datetimeutil.herokuapp.com/formatted?format=dd/mm/yy">http://datetimeutil.herokuapp.com/formatted?format=dd/mm/yy</a>
+                <br/><br/>
+                for formatting details see dateformat <a href="https://www.npmjs.com/package/dateformat">documentation</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>

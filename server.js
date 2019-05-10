@@ -7,6 +7,15 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/style.css', function(req, res) {
+    res.sendFile(path.join(__dirname, 'style.css'));
+});
+
+app.get('/formatted',function(req,res){
+    res.write(dateformat(new Date(),req.param('format').toString()))
+    res.end()    
+})
+
 app.get('/datetime',function(req,res){
     res.write(dateformat(new Date(),'dd-mmm-yyyy hh:MM:ss TT'))
     res.end()

@@ -1,6 +1,7 @@
 # Date Time Utility
 An API in NodeJs which returns the current date and time
 
+Live API : <a href="http://datetimeutil.herokuapp.com">http://datetimeutil.herokuapp.com</a>
 > Options:
 1. use **/date** endpoint to get date in dd-mmm-yyyy format
 2. use **/time** endpoint to get date in dd-mmm-yyyy hh:mm:ss TT format

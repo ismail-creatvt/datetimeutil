@@ -1,5 +1,5 @@
-# datetimeutil
-An API in node which returns the current date and time
+# Date Time Utility
+An API in NodeJs which returns the current date and time
 
 Options:
 1. use /date endpoint to get date in dd-mmm-yyyy format
